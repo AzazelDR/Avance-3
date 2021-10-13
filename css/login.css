@@ -9,7 +9,86 @@
     scroll-behavior: smooth;
 }
 
+label {
+    color: #fff;
+}
+
+.log-form {
+    width: 40%;
+    min-width: 320px;
+    max-width: 475px;
+    background: rgb(168, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 991px) {
+    .log-form {
+        width: 95%;
+        position: relative;
+        margin: 2.5% auto 0 auto;
+        top: 130px;
+        left: 0%;
+        -webkit-transform: translate(0%, 0%);
+        -moz-transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        transform: translate(0%, 0%);
+    }
+}
+
+.log-form form {
+    display: block;
+    width: 100%;
+    height: 11em;
+    padding: 1.5em;
+}
+
+.log-form #username,
+#password {
+    display: block;
+    margin: auto auto;
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 0.5em 0;
+    border: none;
+    background: #dfdfdf;
+    border-radius: 3px;
+    padding-bottom: 0.5em;
+    color: #000000;
+}
+
+.log-form #submit {
+    display: block;
+    margin: auto auto;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 2em;
+    padding: 0.5em 0;
+    border: none;
+    background: #1a008f;
+    border-bottom: 1px solid #1a008fc0;
+    padding-bottom: 0.5em;
+    color: #ffffff;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.log-form input:focus {
+    outline: none;
+}
+
 body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-color: #ededed;
     background-image: url("../img/back.jpg");
     background-size: cover;
@@ -49,6 +128,8 @@ h1 {
     color: rgb(0, 0, 0);
     height: 60px;
     transition: 0.2s;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 .logo {
@@ -147,7 +228,7 @@ h1 {
     display: inline-block;
     text-decoration: none;
     font-size: 1.2em;
-    padding: 0 10.2px;
+    padding: 0 12.1px;
     letter-spacing: 2px;
 }
 
@@ -170,30 +251,6 @@ h1 {
     body {
         padding-top: 7%;
         transition: 0.2s;
-    }
-    .clearfix {
-        clear: '';
-    }
-    .left {
-        float: left;
-        width: 50%;
-    }
-    .right {
-        float: left;
-        width: 50%;
-    }
-    .rightb {
-        float: right;
-        width: 50%;
-    }
-    .img {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 360px;
-    }
-    .footer {
-        padding: 17px;
     }
 }
 
@@ -225,209 +282,4 @@ h1 {
         justify-content: center;
         align-items: center;
     }
-    .clearfix {
-        clear: both;
-    }
-    .content {
-        margin-top: 60px;
-        transition: 0.2s;
-    }
-}
-
-.btn {
-    padding: 20px 30px;
-}
-
-.btn-menu {
-    padding: 10px;
-}
-
-.clearfix {
-    clear: none;
-}
-
-.link {
-    padding: 15px 30px;
-}
-
-.btn2 {
-    padding: 18px 30px;
-}
-
-.btn-menu,
-.btn2,
-.link,
-.btn,
-.app {
-    transition: 0.2s;
-    display: block;
-    color: #000000;
-}
-
-.app {
-    transition: 0.2s;
-}
-
-.btn2:hover,
-.btn:hover,
-.link:hover,
-.app:hover {
-    color: #000000;
-    background: #ffffff;
-    box-shadow: 0 0 10px #ffffff, 0 0 40px #ffffff, 0 0 80px #ffffff;
-}
-
-li a {
-    color: #000000;
-}
-
-.Alitas,
-.Papas,
-.Entradas,
-.Bebidas,
-.Sizes,
-.Telefonos,
-.Redes {
-    width: 100%;
-    background: #ffffff8a;
-    box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, .35);
-}
-
-.Aplicacion {
-    width: 100%;
-    background: #ffffff8a;
-    box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, .35);
-}
-
-.tittle {
-    padding: 32.7px;
-    background: #ff1b40;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-family: 'Fjalla One', sans-serif;
-    cursor: pointer;
-    display: block;
-    box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, .35);
-}
-
-span {
-    padding: 21px;
-    background: #ff1b40;
-    color: rgb(255, 255, 255);
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 20px;
-    cursor: pointer;
-    display: block;
-    box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, .35);
-}
-
-.slide1,
-.slide2,
-.slide3,
-.slide4,
-.slide5,
-.slide6,
-.slide7,
-.slide8 {
-    clear: both;
-    width: 100%;
-    height: 0px;
-    overflow: hidden;
-    text-align: center;
-    transition: height .4s ease;
-}
-
-.slide1 li,
-.slide2 li,
-.slide3 li,
-.slide6 li {
-    box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, .35);
-}
-
-.slide5 li {
-    box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, .35);
-}
-
-.slide4 li {
-    box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, .35);
-}
-
-.slide7 {
-    padding: 0;
-    box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, .35);
-}
-
-.slide8 li {
-    box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, .35);
-}
-
-#touch1,
-#touch2,
-#touch3,
-#touch4,
-#touch5,
-#touch6,
-#touch7,
-#touch8 {
-    position: absolute;
-    opacity: 0;
-    height: 0px;
-}
-
-#touch1:checked+.slide1,
-#touch2:checked+.slide2,
-#touch3:checked+.slide3 {
-    height: 240px;
-}
-
-#touch5:checked+.slide5 {
-    height: 240px;
-}
-
-#touch6:checked+.slide6 {
-    height: 120px;
-}
-
-.checkbox {
-    display: none;
-}
-
-#touch4:checked+.slide4 {
-    height: 280px;
-}
-
-#touch7:checked+.slide7 {
-    height: 400px;
-}
-
-#touch8:checked+.slide8 {
-    height: 164px;
-}
-
-h2 {
-    font-family: 'Fjalla One', sans-serif;
-    padding: 0;
-    margin: 0;
-    background-color: #16234D;
-    color: #fff;
-    padding-top: 7px;
-    padding-bottom: 7px;
-}
-
-a {
-    font-size: 20px;
-}
-
-ul,
-li {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.left,
-.right,
-.rightb {
-    text-align: center;
-    transition: 0.2s;
 }

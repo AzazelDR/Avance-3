@@ -23,9 +23,9 @@
         <div id="toggle"></div>
         <div id="navbar">
             <ul class="head">
-                <li class="item"><a class="Ilink" href="index.html">Inicio</a></li>
-                <li class="item"><a class="Ilink" href="#team">Team</a></li>
-                <li class="item"><a class="Ilink" href="#port">Port</a></li>
+                <li class="item"><a class="Ilink" href="index.html">Logout</a></li>
+                <li class="item"><a class="Ilink" href="home.html">Inicio</a></li>
+                <li class="item"><a class="Ilink" href="team.html">Team</a></li>
             </ul>
         </div>
     </header>
@@ -112,23 +112,7 @@
             </div>
         </div>
     </div>
-    <script>
-        const header = document.getElementById('header')
-        const toggle = document.getElementById('toggle')
-        const navbar = document.getElementById('navbar')
-
-        document.onclick = function(e) {
-            if (e.target.id !== 'header' && e.target.id !== 'toggle' && e.target.id !== 'navbar') {
-                toggle.classList.remove('active');
-                navbar.classList.remove('active')
-            }
-        }
-
-        toggle.onclick = function() {
-            toggle.classList.toggle('active');
-            navbar.classList.toggle('active')
-        }
-    </script>
+    <script src="js/slide.js"></script>
 </body>
 
 </html>
