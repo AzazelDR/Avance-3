@@ -1,5 +1,4 @@
 alert("correo: user@mail - contraseña: 123 ");
-
 var attempt = 3; // Variable to count number of attempts.
 // Below function Executes on click of login button.
 function validate() {
