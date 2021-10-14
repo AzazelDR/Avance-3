@@ -1,12 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@font-face {
+    font-family: BS;
+    src: url("../fonts/bs.ttf");
+}
+
+@font-face {
+    font-family: BSbold;
+    src: url("../fonts/bsb.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: "BS";
     text-decoration: none;
     scroll-behavior: smooth;
+    transition: 0.2s;
 }
 
 body {
@@ -43,7 +52,7 @@ body {
 h1 {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.445);
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "BS";
     padding-top: 8px;
     font-size: 40px;
     color: rgb(0, 0, 0);
@@ -146,8 +155,8 @@ h1 {
     line-height: 60px;
     display: inline-block;
     text-decoration: none;
-    font-size: 1.2em;
-    padding: 0 10.2px;
+    font-size: 1.1em;
+    padding: 1px 5.3px;
     letter-spacing: 2px;
 }
 
@@ -304,7 +313,7 @@ li a {
     background: #ff1b40;
     color: rgb(255, 255, 255);
     font-size: 20px;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "BSbold";
     cursor: pointer;
     display: block;
     box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, .35);
@@ -314,7 +323,7 @@ span {
     padding: 21px;
     background: #ff1b40;
     color: rgb(255, 255, 255);
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "BSbold";
     font-size: 20px;
     cursor: pointer;
     display: block;
@@ -377,15 +386,15 @@ span {
 #touch1:checked+.slide1,
 #touch2:checked+.slide2,
 #touch3:checked+.slide3 {
-    height: 240px;
+    height: 260px;
 }
 
 #touch5:checked+.slide5 {
-    height: 240px;
+    height: 260px;
 }
 
 #touch6:checked+.slide6 {
-    height: 120px;
+    height: 131px;
 }
 
 .checkbox {
@@ -393,7 +402,7 @@ span {
 }
 
 #touch4:checked+.slide4 {
-    height: 280px;
+    height: 300px;
 }
 
 #touch7:checked+.slide7 {
@@ -401,11 +410,11 @@ span {
 }
 
 #touch8:checked+.slide8 {
-    height: 164px;
+    height: 169px;
 }
 
 h2 {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "BS";
     padding: 0;
     margin: 0;
     background-color: #16234D;
